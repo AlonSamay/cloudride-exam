@@ -6,7 +6,7 @@ phases:
       - echo Logging in to Amazon ECR...
       - aws --version
       - docker version
-      - ${aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email}
+      - aws ecr get-login --region eu-central-1 --no-include-email
       - REPO_URI=753392824297.dkr.ecr.eu-central-1.amazonaws.com/alon_exam_ecr_repo
     
   build:
