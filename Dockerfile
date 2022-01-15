@@ -1,5 +1,6 @@
 # Use an official Node runtime as a parent image
-FROM node:12.7.0-alpine
+# changed to ECR because of docker rate limit issue
+FROM 753392824297.dkr.ecr.eu-central-1.amazonaws.com/node:12.7.0-alpine 
 
 # Set the working directory to /app
 WORKDIR '/app'
